@@ -41,6 +41,8 @@
 //  36. Top Bar
 
 @import 'util/util';
+@import 'font';
+@import 'color';
 
 // 1. Global
 // ---------
@@ -62,7 +64,8 @@ $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+//$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: $main;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -207,7 +210,8 @@ $accordion-content-padding: 1rem;
 // -----------------
 
 $accordionmenu-arrows: true;
-$accordionmenu-arrow-color: $primary-color;
+//$accordionmenu-arrow-color: $primary-color;
+$accordionmenu-arrow-color: $white;
 
 // 9. Badge
 // --------
@@ -524,10 +528,13 @@ $tab-content-padding: 1rem;
 // 33. Thumbnail
 // -------------
 
-$thumbnail-border: solid 4px $white;
+//$thumbnail-border: solid 4px $white;
+$thumbnail-border: none;
 $thumbnail-margin-bottom: $global-margin;
-$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
-$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+//$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
+$thumbnail-shadow: none;
+//$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-shadow-hover: none;
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
 
@@ -558,8 +565,10 @@ $tooltip-radius: $global-radius;
 // 36. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+//$topbar-padding: 0.5rem;
+$topbar-padding: 1rem;
+//$topbar-background: $light-gray;
+$topbar-background: $blue;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;

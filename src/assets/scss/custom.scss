@@ -1,0 +1,162 @@
+@import 'font';
+@import 'color';
+
+//* {
+//    transition: all 0.5s ease;
+//}
+
+//MENU STYLE
+
+#menu {
+    padding-left: 150px;
+    padding-right: 150px;
+        @include breakpoint (medium only) {
+            padding-left: 20px;
+            padding-right: 20px;   
+    }
+    .top-bar-left {
+        .menu-text {
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: white;
+        }
+    }
+    .top-bar-right {
+        .menu a {
+            color: white;
+        }
+    }
+}
+
+.mobile {
+    background-color: #6dbbff;
+    padding: 10px 0;
+    a {
+        color: white;
+        font-size: 1.2rem;
+        &:hover {
+            color: $yellow;
+        }
+        &:active {
+            color: $yellow;
+        }
+    }
+}
+
+//INTRO
+
+.intro {
+    padding: 100px 0;
+    @include breakpoint (medium) {
+        padding: 80px 0;
+    }
+    @include breakpoint (small) {
+        padding: 50px 0;
+    }
+}
+
+#bluering {
+    padding: 60px 0;
+}
+
+#hi {
+    font-family: $text;
+    font-size: 8rem;
+    @include breakpoint (medium) {
+        font-size: 6rem;
+    }
+    @include breakpoint (small) {
+        font-size: 4rem;
+    }
+}
+
+//ABOUT
+
+.about {
+    padding: 50px 0;
+    @include breakpoint (small only) {
+        padding: 25px 0;
+    }
+}
+
+#about {
+    margin-bottom: 25px;
+    h1 {
+        font-family: $text;
+    }
+}
+
+//SERVICES
+.services {
+    padding: 100px 0;
+    @include breakpoint (small only) {
+        padding: 50px 0;
+    }
+    h1 {
+        font-family: $text;
+    }
+}
+
+.tipe {
+    padding-bottom: 100px;
+    @include breakpoint (small only) {
+        padding-bottom: 5px 0;
+    }
+}
+
+.client {
+    padding-bottom: 100px;
+    @include breakpoint (small only) {
+        padding-bottom: 5px 0;
+    }
+    h1 {
+        font-family: $text;
+    }
+}
+
+.list {
+    padding-bottom: 100px;
+    @include breakpoint (small only) {
+        padding-bottom: 5px 0;
+    }
+    h1 {
+        font-family: $text;
+    }
+}
+
+.call {
+    padding: 50px;
+    @include breakpoint (small only) {
+        padding: 30px 30px 20px 30px;
+    }
+    background-image: url(../img/calltoact.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+        color: white;
+        font-family: $text;
+    }
+}
+
+//FOOTER
+
+footer {
+    background-color: $blue;
+}
+
+#footer {
+    padding: 50px;
+    @include breakpoint (medium) {
+        padding: 25px;
+    }
+    p {
+        color: white;
+    }
+    a {
+        color: white;
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
